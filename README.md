@@ -11,4 +11,6 @@ Learned how to:
 
 3.) How to make elements float and work on the different screen sizes so that it doesn't clog the page up or break. 
 
+4.) A functional feedback system.
+
 Website optimized for all screen sizes and phones.

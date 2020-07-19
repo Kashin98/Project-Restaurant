@@ -28,10 +28,14 @@ html{
     --classyfont: 'Srisakdi', cursive;
     --remedyfont:  'Nunito', sans-serif;
 }
-/* ---------------------------------BACKGROUND IMG---------------------- */    
+/* ---------------------------------BACKGROUND IMG---------------------- */
+body{
+    overflow-y:hidden;
+}
 header{
     text-align: center;
     overflow: hidden;
+    overflow-y:scroll;
     background: linear-gradient(75deg,#241f22a1,#0e0e0f73, #151b1d98 ), url(../images/bgimg2.jpg) center / cover no-repeat fixed;
 }
 /* ----------------------------------GLOBAL FIXES----------------------------- */

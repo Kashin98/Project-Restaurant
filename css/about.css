@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nunito:wght@600&family=Source+Sans+Pro:wght@90&family=Berkshire+Swash&family=Fredericka+the+Great&family=Srisakdi:wght@700&display=swap&');
+*{
+    font-family: var(--remedyfont);
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* For smooth transition when clicking on internal links */
+html{
+    scroll-behavior: smooth;
+}
+/* ---------------------GLOBAL VARS------------------------ */
+:root{
+    --headingintro:#A9FBD7;
+    --mainlyellow:#fcf9b7;
+    --mainbg:#DA4167;
+    --shadoworange:#ee6123;
+    --authtextshadow:0 2px 3.5px var(--shadoworange);
+    --maintextshadow:2px 0 3.5px #F5FF90;
+    --maingreen:#90E39A;
+    --maintransition:all 0.5s;
+    --infobox-bg:#ECEBE4;
+    --mainblackbg:#2B2C28;
+    --mainfont:'Berkshire Swash', cursive;
+    --transparentfont:'Fredericka the Great', cursive;
+    --slantedfont:'Leckerli One', cursive;
+    --classyfont: 'Srisakdi', cursive;
+    --remedyfont:  'Nunito', sans-serif;
+}
+header{
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(75deg,#241f22a1,#0e0e0f73, #151b1d98 ), url(../images/bgimg2.jpg) center / cover no-repeat fixed;
+}
+/* Section center AND Clearfix GLOBAL FIXES*/
+.section-center {
+    padding: 4rem 0;
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/* Fix for clear which lead to background image being visible behind infoboxes */
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* ------------------------------- NAV BAR----------------------------------- */
+/* nav button */
+.nav-button{
+    position: fixed;
+    top: 0;  
+    left: 0;
+    padding: 20px 10px 10px 20px;
+    color: var(--mainbg);
+    font-size: 3rem;
+    transition: var(--maintransition);
+    z-index: 1;
+}
+.nav-button:hover{
+    color: #449DD1;
+}
+/* navbar */
+.navbar{
+    background: var(--mainblackbg);
+    position: fixed;
+    top: 0;  
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 0 0 20px;
+    color: var(--mainbg);
+    transition: var(--maintransition);
+    z-index: 2;
+    transition: var(--maintransition);
+    transform: translateX(-100%);
+}
+/* navbar closing up */
+.navbar-close{
+    color: #449DD1;
+    font-size: 3rem;
+    transition: var(--maintransition);
+}
+.navbar-close:hover{
+    color: var(--mainbg);
+}
+.open-navbar{
+    transform: translateX(0);
+}
+/* navbar links styling */
+.nav-link{
+    color: var(--mainbg);
+    display: block;
+    transition: var(--maintransition);
+    list-style-type: none;
+    font-size: 2rem;
+}
+.nav-link:hover{
+    color: var(--maingreen);
+    text-shadow: var(--maintextshadow);
+    transform: translateX(10px);
+}
+li{
+    padding: 10px 0;}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        width: 33vw;
+        max-width: 23rem;
+    }
+    }
+
+/* -----------------------INTRODUCTION TO PAGE SETTINGS--------------------- */
+/* First heading */
+.intro1{
+    color: var(--headingintro);
+    font-family: var(--classyfont);
+    font-size: 3.5em;
+    padding: 200px 0 80px 0;
+    animation: cuisine 4s;
+    text-transform: capitalize;
+}
+/* 2nd heading */
+.intro2{
+    text-shadow: 2px 0 3.5px #F5FF90 ;
+    color: #EE6123;
+    font-family: var(--mainfont);
+    font-size: 6em;
+    padding: 20px 0 80px 0;
+    animation: FD 4s;
+    text-transform: capitalize;
+}
+/*3rd heading */
+.intro3{
+    text-shadow: 0 2px 3.5px var(--shadoworange) ;
+    padding-top: 20px;
+    font-size:4em;
+    color: var(--mainlyellow);
+    font-weight: 500;
+    animation:  6s intro3 ;
+    font-family: var(--transparentfont);
+    text-transform: capitalize;
+}
+/* All animation effects for 1st, 2nd and 3rd heading */
+@keyframes cuisine{
+    0% {transform: translateX(-50vw);}
+    75% {transform: translateX(5vw);}
+}
+@keyframes FD{
+    0% {transform: translateX(50vw);}
+    75% {transform: translateX(-5vw);}
+}
+
+@keyframes intro3{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/* Anchor tag link styling */
+a{
+    color: var(--mainblackbg);
+    font-family: var(--slantedfont)
+}
+/* ---------------------FIRST LINKBOX SETUP------------------- */
+/* linkbox used thorugh out webpage */
+.linkbox1effects{
+    font-size: 1.7em;
+    outline: 2px solid var(--maingreen);
+    outline-offset: 4px;
+    padding: 20px;
+    background: var(--maingreen);
+    display: inline-block;
+    cursor: pointer;
+    transition: var(--maintransition);
+    margin: 50px 0 105px 0;
+    animation: linkbox 5s;
+    text-transform: capitalize;
+}
+
+.linkbox1effects:hover{
+    transform: scale(1.1, 1.1);
+    color: var(--shadoworange);
+    background: var(--mainlyellow);
+    outline-color: var(--shadoworange);
+}
+/* Animations for link box 1 */
+@keyframes linkbox{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/* ------------------------GRADIENT LINE---------------------- */
+.linearline{
+    margin-top: -62px;
+    height: 15px;
+    background: linear-gradient(90deg,#ACF39D, #FF8C42, #ECD444);
+}
+/* ------------------------ABOUT SECTION STYLING------------------------- */
+/* About main section and all text container */
+.about-section,
+.restaurant-infotext-container{
+    padding: -5px 20px;
+    margin-top: -10px;
+    background: var(--mainblackbg);
+}
+/* about section image container */
+.restaurant-img-container{
+    border: solid 10px var(--maingreen);
+    border-radius: 6%;
+    overflow: hidden;
+    transition: var(--maintransition);
+    width: 100%;
+    background: url(../images/AHHH.png) 0 /1152px 648px no-repeat scroll;
+    margin-bottom: 50px;
+    margin-top: -10px;
+}
+/* about section main image */
+.restaurant-info-img{
+    width: 100%;
+    display: block;
+    transition: var(--maintransition); 
+}
+/* hover efects for container and images */
+.restaurant-img-container:hover .restaurant-info-img{
+    transform: scale(1.1, 1.1);
+    border: var(--shadoworange);
+    animation: 8s ahhh forwards;
+}
+/* I can't look at it */
+@keyframes ahhh {
+    100%{
+        opacity: 0.4;
+    }
+}
+.restaurant-img-container:hover {
+    border: solid 10px var(--shadoworange);
+}
+/* Global title and paragraph setup */
+.x-info-title{
+    text-transform: capitalize;
+    font-family: var(--slantedfont);
+    font-size: 2.7rem;
+    color: var(--shadoworange);
+    margin-bottom: 50px;
+}
+.x-info-descrip{
+    font-size: 1.2rem;
+    color: azure;
+}
+/* About section adjustments for multiple screen sizes */
+@media screen and (min-width: 1182px){
+    .restaurant-img{
+        width: 100%;
+    }
+    .restaurant-info-descrip
+    .restaurant-info-title{
+        font-size: 1rem;
+        text-align: unset;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    .restaurant-img-container{
+        background: url(../images/AHHH.png) 0 /800px 648px no-repeat scroll;
+}
+}
+@media screen and (max-width: 650px){
+    .restaurant-img-container{
+        background: url(../images/AHHH.png) 0 /490px 400px no-repeat scroll;
+    }
+}
+@media screen and (max-width: 450px){
+    .restaurant-img-container{
+        background: url(../images/AHHH.png) 0 /340px 200px no-repeat scroll;
+    }
+}
+
+
+/* ------------------------------------------FOOTER STYLING------------------------------ */
+/* Entire footer section */
+.footer-section{
+    background:aliceblue;
+}
+/* restaurant title copyright */
+.footer-title{
+    color: var(--mainblackbg);
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+/* restuarnt name in footer */
+.footer-rest-title{
+    color: var(--mainbg);
+}
+/* Credits of website author */
+.footer-credits{
+    color: var(--shadoworange);
+    font-size: 1.4rem;
+    font-family: var(--slantedfont);
+    text-align: center;
+    margin: 10px 0 2px 0;
+    text-transform: capitalize;
+}
+/* social link names*/
+.footer-socials{
+    color: var(--mainblackbg);
+    font-size: 1.2rem;
+    font-family: var(--remedyfont);
+}
+/* Container of link with font awesome icon */
+.socials{
+    padding: 1rem 2rem 1rem 2rem;
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:930px){
+    .footer-socials{
+        font-size: 0.8rem;
+    }
+    /* To make sure every linkbox is centered when lower than these pixels */
+    .linkbox-center{
+        text-align: center;
+    }
+}
+/* ------------------------------------FIX FOR SMALL SCREEN SIZE PHONES------------------------ */
+/* Fix for font and everything being too big at lower pixel screens */
+@media screen and (max-width:500px){
+    /* Navbar, Intro headings, linkbox font, section headings,infotext etc. being too damn huge for phones */
+    /* --------NavBar settings------ */
+    .nav-button{
+        font-size: 1.4rem;
+    }
+    .navbar-close{
+        font-size: 1.4rem;
+    }
+    .nav-link{
+        font-size: 1.5rem;
+    }
+    /*  ------Intro headings----  */
+    .intro1{
+        padding:70px 0 40px 0;
+        font-size: 1.5rem;
+    }
+    .intro2{
+        padding:0;
+        font-size: 3rem;
+    }
+    .intro3
+    {
+        padding:40px 0 0 0;
+        font-size: 2rem;
+    }
+    /* linkbox font */
+    .linkbox1effects{
+        font-size: 0.9rem;
+        margin: 40px 0 20px 0;
+    }
+    /* ------gradient line-------- */
+    .linearline{
+        height:3px;
+        margin-top: 0;
+    }
+    /* ------Section intros and infotext adjustments------- */
+    /* Global title and paragraph setup for product and about section */
+    .x-info-title{
+        font-size: 1.8rem;
+    }
+    .x-info-descrip{
+        font-size: 1rem;
+    }
+    /* -----footer styling------ */
+    .footer-title{
+        font-size:0.8rem
+    }
+    .footer-credits{
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+}

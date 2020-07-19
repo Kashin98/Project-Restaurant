@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nunito:wght@600&family=Source+Sans+Pro:wght@90&family=Berkshire+Swash&family=Fredericka+the+Great&family=Srisakdi:wght@700&display=swap&');
+*{
+    font-family: var(--remedyfont);
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* For smooth transition when clicking on internal links */
+html{
+    scroll-behavior: smooth;
+}
+/* ---------------------GLOBAL VARS------------------------ */
+:root{
+    --headingintro:#A9FBD7;
+    --mainlyellow:#fcf9b7;
+    --mainbg:#DA4167;
+    --shadoworange:#ee6123;
+    --authtextshadow:0 2px 3.5px var(--shadoworange);
+    --maintextshadow:2px 0 3.5px #F5FF90;
+    --maingreen:#90E39A;
+    --maintransition:all 0.5s;
+    --infobox-bg:#ECEBE4;
+    --mainblackbg:#2B2C28;
+    --mainfont:'Berkshire Swash', cursive;
+    --transparentfont:'Fredericka the Great', cursive;
+    --slantedfont:'Leckerli One', cursive;
+    --classyfont: 'Srisakdi', cursive;
+    --remedyfont:  'Nunito', sans-serif;
+}
+/* ---------------------------------BACKGROUND IMG---------------------- */    
+header{
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(75deg,#241f22a1,#0e0e0f73, #151b1d98 ), url(../images/bgimg2.jpg) center / cover no-repeat fixed;
+}
+/* ----------------------------------GLOBAL FIXES----------------------------- */
+/* section centering */
+.section-center {
+    padding: 4rem 0;
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/* Fix for clear which lead to background image being visible behind infoboxes */
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Incase i want to center my linkbox during certian pixel sizes (jsut reminder) */
+/* footer styling screen size is where it's located */
+.linkbox-center{
+    text-align: unset;
+}
+
+/* --------------------------------GLOBAL SETTINGS AND SELECTORS---------------------- */
+/* Global title and paragraph setup for about and product section */
+.x-info-title{
+    text-transform: capitalize;
+    font-family: var(--slantedfont);
+    font-size: 2.7rem;
+    color: var(--shadoworange);
+    margin-bottom: 50px;
+}
+.x-info-descrip{
+    font-size: 1.2rem;
+}
+/* ------------------------------- NAV BAR----------------------------------- */
+/* nav button */
+.nav-button{
+    position: fixed;
+    top: 0;  
+    left: 0;
+    padding: 20px 10px 10px 20px;
+    color: var(--mainbg);
+    font-size: 3rem;
+    transition: var(--maintransition);
+    z-index: 1;
+}
+.nav-button:hover{
+    color: #449DD1;
+}
+/* navbar */
+.navbar{
+    background: var(--mainblackbg);
+    position: fixed;
+    top: 0;  
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 0 0 20px;
+    color: var(--mainbg);
+    transition: var(--maintransition);
+    z-index: 2;
+    transition: var(--maintransition);
+    transform: translateX(-100%);
+}
+/* navbar closing up */
+.navbar-close{
+    color: #449DD1;
+    font-size: 3rem;
+    transition: var(--maintransition);
+}
+.navbar-close:hover{
+    color: var(--mainbg);
+}
+.open-navbar{
+    transform: translateX(0);
+}
+/* navbar links styling */
+.nav-link{
+    color: var(--mainbg);
+    display: block;
+    transition: var(--maintransition);
+    list-style-type: none;
+    font-size: 2rem;
+}
+.nav-link:hover{
+    color: var(--maingreen);
+    text-shadow: var(--maintextshadow);
+    transform: translateX(10px);
+}
+li{
+    padding: 10px 0;}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        width: 33vw;
+        max-width: 23rem;
+    }
+    }
+
+
+/* -----------------------INTRODUCTION TO PAGE SETTINGS--------------------- */
+/* First heading */
+.intro1{
+    color: var(--headingintro);
+    font-family: var(--classyfont);
+    font-size: 3.5rem;
+    padding: 100px 0 80px 0;
+    animation: cuisine 4s;
+    text-transform: capitalize;
+}
+/* 2nd heading */
+.intro2{
+    text-shadow: 2px 0 3.5px #F5FF90 ;
+    color: #EE6123;
+    font-family: var(--mainfont);
+    font-size: 6rem;
+    padding: 20px 0 80px 0;
+    animation: FD 4s;
+    text-transform: capitalize;
+}
+/*3rd heading */
+.intro3{
+    text-shadow: 0 2px 3.5px var(--shadoworange) ;
+    padding: 20px 0 40px 0;
+    font-size:4rem;
+    color: var(--mainlyellow);
+    font-weight: 500;
+    animation:  6s intro3 ;
+    font-family: var(--transparentfont);
+    text-transform: capitalize;
+}
+/* All animation effects for 1st, 2nd and 3rd heading */
+@keyframes cuisine{
+    0% {transform: translateX(-50vw);}
+    75% {transform: translateX(5vw);}
+}
+@keyframes FD{
+    0% {transform: translateX(50vw);}
+    75% {transform: translateX(-5vw);}
+}
+
+@keyframes intro3{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/* Anchor tag link styling */
+a{
+    color: #494947;
+    font-family: var(--slantedfont)
+}
+/* ---------------------FIRST LINKBOX SETUP------------------- */
+/* linkbox used through out webpage */
+.linkbox1effects{
+    font-size: 1.7rem;
+    outline: 2px solid var(--maingreen);
+    outline-offset: 4px;
+    padding: 20px;
+    background: var(--maingreen);
+    display: inline-block;
+    cursor: pointer;
+    transition: var(--maintransition);
+    margin: 50px 0 105px 0;
+    animation: linkbox 5s;
+    text-transform: capitalize;
+}
+
+.linkbox1effects:hover{
+    transform: scale(1.1, 1.1);
+    color: var(--shadoworange);
+    background: var(--mainlyellow);
+    outline-color: var(--shadoworange);
+}
+/* Animations for link box 1 */
+@keyframes linkbox{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+/* ------------------------GRADIENT LINE---------------------- */
+.linearline{
+    height: 15px;
+    background: linear-gradient(90deg,#ACF39D, #FF8C42, #ECD444);
+    margin-top: 47px;
+}
+/* ---------------------------PRODUCT AISLES SECTION-------------------------- */
+/* Product section setup */
+.products-aisle{
+    background: var(--mainblackbg);
+    margin-top: -50px;
+}
+/* Entire image setupo section */
+.product-image-section{
+    margin-top: -50px;
+}
+/* Product img contianer setup for all products */
+.product-img-container{
+    border: solid 0px ;
+    border-radius: 6%;
+    overflow: hidden;
+    width: 100%;
+}
+/* All product images settings */
+.product-main-image{
+    display: block;
+    width: 100%;
+    transition: var(--maintransition);
+}
+/* Hover effecto for container of product image */
+.product-img-container:hover .product-main-image{
+    transform: scale(1.1);
+}
+/*alll Product title settings */
+.product-title{
+    text-transform: capitalize;
+    font-family: var(--remedyfont);
+    font-size: 1.7rem;
+    margin:20px 0 40px 0;
+    letter-spacing: 5px;
+    color: azure;
+    text-align: center;
+}
+/* All price title settings */
+.price-title{
+    text-transform: capitalize;
+    font-family: var(--transparentfont);
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 20px 0 40px 0 ;
+    letter-spacing: 5px;
+    color: var(--mainbg);
+    border: dotted 2px ;
+    padding: 20px 0;
+    transition: var(--maintransition);
+}
+/* hover effect setup for all price titles */
+.price-title:hover{
+    transform: scale(1.04);
+}
+/* Adjustment fr product tiles on different screen sizes */
+@media screen and (min-width:900px){
+    .product-n{
+        float: left;
+        width: 50%;
+        padding: 3rem;
+    }
+}
+
+/* ------------------------------------------FOOTER STYLING------------------------------ */
+/* Entire footer section */
+.footer-section{
+    background:aliceblue;
+}
+/* restaurant title copyright */
+.footer-title{
+    color: var(--mainblackbg);
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+/* restuarnt name in footer */
+.footer-rest-title{
+    color: var(--mainbg);
+}
+/* Credits of website author */
+.footer-credits{
+    color: var(--shadoworange);
+    font-size: 1.4rem;
+    font-family: var(--slantedfont);
+    text-align: center;
+    margin: 10px 0 2px 0;
+    text-transform: capitalize;
+}
+/* social link names*/
+.footer-socials{
+    color: var(--mainblackbg);
+    font-size: 1.2rem;
+    font-family: var(--remedyfont);
+}
+/* Container of link with font awesome icon */
+.socials{
+    padding: 1rem 2rem 1rem 2rem;
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:930px){
+    .footer-socials{
+        font-size: 0.8rem;
+    }
+    /* To make sure every linkbox is centered when lower than these pixels */
+    .linkbox-center{
+        text-align: center;
+    }
+}
+/* ------------------------------------FIX FOR SMALL SCREEN SIZE PHONES------------------------ */
+/* Fix for font and everything being too big at lower pixel screens */
+@media screen and (max-width:500px){
+    /* Navbar, Intro headings, linkbox font, section headings,infotext etc. being too damn huge for phones */
+    /* --------NavBar settings------ */
+    .nav-button{
+        font-size: 1.4rem;
+    }
+    .navbar-close{
+        font-size: 1.4rem;
+    }
+    .nav-link{
+        font-size: 1.5rem;
+    }
+    /*  ------Intro headings----  */
+    .intro1{
+        padding:70px 0 40px 0;
+        font-size: 1.5rem;
+    }
+    .intro2{
+        padding:0;
+        font-size: 3rem;
+    }
+    .intro3
+    {
+        padding:40px 0 0 0;
+        font-size: 2rem;
+    }
+    /* linkbox font */
+    .linkbox1effects{
+        font-size: 0.9rem;
+        margin: 40px 0 20px 0;
+    }
+    /* ------gradient line-------- */
+    .linearline{
+        height:3px;
+        margin-top: 0;
+    }
+    /* ------Section intros and infotext adjustments------- */
+    /* Global title and paragraph setup for product and about section */
+    .x-info-title{
+        font-size: 1.8rem;
+    }
+    .x-info-descrip{
+        font-size: 1rem;
+    }
+    /* ------Product aisle styling------ */
+    /*alll Product title settings */
+    .product-title{
+        font-size: 1.3rem;
+    }
+    /* All price title settings */
+    .price-title{
+        font-size: 1.2rem;
+    }
+    /* -----footer styling------ */
+    .footer-title{
+        font-size:0.8rem
+    }
+    .footer-credits{
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+}

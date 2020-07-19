@@ -118,7 +118,7 @@ li{
     color: var(--headingintro);
     font-family: var(--classyfont);
     font-size: 3.5em;
-    padding: 200px 0 80px 0;
+    padding: 100px 0 80px 0;
     animation: cuisine 4s;
     text-transform: capitalize;
 }

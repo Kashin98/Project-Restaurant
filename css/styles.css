@@ -10,9 +10,6 @@
 html{
     scroll-behavior: smooth;
 }
-html, body{
-    height:100%;
-}
 /* ---------------------GLOBAL VARS------------------------ */
 :root{
     --headingintro:#A9FBD7;
@@ -32,13 +29,9 @@ html, body{
     --remedyfont:  'Nunito', sans-serif;
 }
 /* ---------------------------------BACKGROUND IMG---------------------- */
-body{
-    overflow-y: hidden;
-}
 header{
     text-align: center;
     overflow: hidden;
-    overflow-y: scroll;
     background: linear-gradient(75deg,#241f22a1,#0e0e0f73, #151b1d98 ), url(../images/bgimg2.jpg) center / cover no-repeat fixed;
 }
 /* ----------------------------------GLOBAL FIXES----------------------------- */

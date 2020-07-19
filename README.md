@@ -1,5 +1,5 @@
 # Project-Restaurant
-Creating a website from scratch to test HTML, CSS &amp; JS skills. 
+Creating a fictional restaurant website from scratch to test HTML, CSS &amp; JS skills. 
 
 Learned how to: 
 

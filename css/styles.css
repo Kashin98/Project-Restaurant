@@ -539,6 +539,9 @@ button{
     .nav-link{
         font-size: 1.5rem;
     }
+        header{
+        background: linear-gradient(75deg,#241f22a1,#0e0e0f73, #151b1d98 ), url(../images/bgimg2.jpg) center / cover no-repeat scroll;
+    }
     /*  ------Intro headings----  */
     .intro1{
         padding:70px 0 40px 0;

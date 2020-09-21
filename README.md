@@ -3,7 +3,7 @@ Creating a fictional restaurant website from scratch to test HTML, CSS &amp; JS 
 
 Hosted on AWS S3 bucket to better understand and utilise AWS features. Bucket given public read access.
 
-WEBSITE FULLY ACCESSIBLE AT : https://projectkbp.s3.ap-south-1.amazonaws.com/Index.html
+WEBSITE FULLY ACCESSIBLE AT : http://projectkbp.s3-website.ap-south-1.amazonaws.com
 
 Learned how to: 
 

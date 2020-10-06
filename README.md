@@ -3,8 +3,11 @@ Creating a fictional restaurant website from scratch to test HTML, CSS &amp; JS 
 
 Hosted on AWS S3 bucket to better understand and utilise AWS features. Bucket given public read access.
 
-WEBSITE FULLY ACCESSIBLE AT : http://projectkbp.s3-website.ap-south-1.amazonaws.com
+Website is using the AWS Cloudfront service for a CDN. The bucket's direct S3 endpoint has been disabled and the user is only allowed to access the website through the CDN, allows user lower latency not having direct access to origin point.
 
+This is the bucket's direct Endpoint "http://projectkbp2.s3-website.ap-south-1.amazonaws.com" which is blocked. CDN is linked below.
+
+WEBSITE FULLY ACCESSIBLE AT CDN: d15dv7dyrltme0.cloudfront.net 
 Learned how to: 
 
 1.) Make a functional navbar. 
@@ -19,3 +22,6 @@ Learned how to:
 
 
 Website optimized for all screen sizes and phones.
+
+(All used AWS services expire in Sept 2021 for this  project)
+

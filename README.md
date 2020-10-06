@@ -7,7 +7,8 @@ Website is using the AWS Cloudfront service for a CDN. The bucket's direct S3 en
 
 This is the bucket's direct Endpoint "http://projectkbp2.s3-website.ap-south-1.amazonaws.com" which is blocked. CDN is linked below.
 
-WEBSITE FULLY ACCESSIBLE AT CDN: d15dv7dyrltme0.cloudfront.net 
+WEBSITE FULLY ACCESSIBLE AT CDN:  "d15dv7dyrltme0.cloudfront.net"
+
 Learned how to: 
 
 1.) Make a functional navbar. 

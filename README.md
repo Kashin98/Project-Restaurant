@@ -1,7 +1,7 @@
 # Project-Restaurant
 Creating a fictional restaurant website from scratch to test HTML, CSS &amp; JS skills.
 
-Hosted on AWS S3 bucket to better understand and utilise AWS features. Bucket given public read access.
+Hosted on AWS S3 bucket to better understand and utilise AWS features.
 
 Website is using the AWS Cloudfront service for a CDN. The bucket's direct S3 endpoint has been disabled and the user is only allowed to access the website through the CDN, allows user lower latency not having direct access to origin point.
 

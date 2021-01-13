@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nunito:wght@600&family=Source+Sans+Pro:wght@90&family=Berkshire+Swash&family=Fredericka+the+Great&family=Srisakdi:wght@700&display=swap&');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Source+Sans+Pro:wght@90&family=Berkshire+Swash&family=Righteous&family=Quicksand&display=swap&');
 *{
     font-family: var(--remedyfont);
     padding: 0 ;
@@ -23,9 +23,9 @@ html{
     --infobox-bg:#ECEBE4;
     --mainblackbg:#2B2C28;
     --mainfont:'Berkshire Swash', cursive;
-    --transparentfont:'Fredericka the Great', cursive;
-    --slantedfont:'Leckerli One', cursive;
-    --classyfont: 'Srisakdi', cursive;
+    --fatfont:'Leckerli One', cursive;
+    --fatfont:'Righteous', cursive;
+    --thinfont:'Quicksand', sans-serif;
     --remedyfont:  'Nunito', sans-serif;
 }
 header{
@@ -116,7 +116,7 @@ li{
 /* First heading */
 .intro1{
     color: var(--headingintro);
-    font-family: var(--classyfont);
+    font-family: var(--thinfont);
     font-size: 3.5em;
     padding: 100px 0 80px 0;
     animation: cuisine 4s;
@@ -140,7 +140,7 @@ li{
     color: var(--mainlyellow);
     font-weight: 500;
     animation:  6s intro3 ;
-    font-family: var(--transparentfont);
+    font-family: var(--remedyfont);
     text-transform: capitalize;
 }
 /* All animation effects for 1st, 2nd and 3rd heading */
@@ -160,7 +160,7 @@ li{
 /* Anchor tag link styling */
 a{
     color: var(--mainblackbg);
-    font-family: var(--slantedfont)
+    font-family: var(--fatfont)
 }
 /* ---------------------FIRST LINKBOX SETUP------------------- */
 /* linkbox used thorugh out webpage */

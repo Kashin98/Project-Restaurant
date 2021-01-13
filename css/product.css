@@ -289,27 +289,19 @@ a{
 /* restaurant title copyright */
 .footer-title{
     color: var(--mainblackbg);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
     padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 /* restuarnt name in footer */
 .footer-rest-title{
     color: var(--mainbg);
 }
-/* Credits of website author */
-.footer-credits{
-    color: var(--shadoworange);
-    font-size: 1.4rem;
-    font-family: var(--slantedfont);
-    text-align: center;
-    margin: 10px 0 2px 0;
-    text-transform: capitalize;
-}
 /* social link names*/
 .footer-socials{
     color: var(--mainblackbg);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-family: var(--remedyfont);
 }
 /* Container of link with font awesome icon */
@@ -322,9 +314,6 @@ a{
 }
 
 @media screen and (max-width:930px){
-    .footer-socials{
-        font-size: 0.8rem;
-    }
     /* To make sure every linkbox is centered when lower than these pixels */
     .linkbox-center{
         text-align: center;
@@ -344,7 +333,7 @@ a{
     .nav-link{
         font-size: 1.5rem;
     }
-        header{
+    header{
         background: linear-gradient(75deg,#241f22a1,#0e0e0f73, #151b1d98 ), url(../images/bgimg2.jpg) center / cover no-repeat scroll;
     }
     /*  ------Intro headings----  */
@@ -380,15 +369,12 @@ a{
         font-size: 1rem;
     }
     /* ------Product aisle styling------ */
-    /*alll Product title settings */
     .product-title{
         font-size: 1.3rem;
     }
-    /* All price title settings */
     .price-title{
         font-size: 1.2rem;
     }
-    /* -----footer styling------ */
     .footer-title{
         font-size:0.8rem
     }

@@ -476,14 +476,13 @@ button{
     }
 }
 /* ------------------------------------------FOOTER STYLING------------------------------ */
-/* Entire footer section */
 .footer-section{
     background:var(--mainblackbg) ;
 }
 /* restaurant title & copyright settings */
 .footer-title{
     color: azure;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
     padding-top: 1rem;
 }
@@ -491,19 +490,10 @@ button{
 .footer-rest-title{
     color: var(--mainbg);
 }
-/* Credits of website author */
-.footer-credits{
-    color: var(--maingreen);
-    font-size: 1.4rem;
-    font-family: var(--slantedfont);
-    text-align: center;
-    margin: 10px 0 2px 0;
-    text-transform: capitalize;
-}
 /* social link names*/
 .footer-socials{
     color: azure;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-family: var(--remedyfont);
 }
 /* Container of link with font awesome icon */
@@ -516,9 +506,6 @@ button{
 }
 
 @media screen and (max-width:930px){
-    .footer-socials{
-        font-size: 0.8rem;
-    }
     /* To make sure every linkbox is centered when lower than these pixels */
     .linkbox-center{
         text-align: center;

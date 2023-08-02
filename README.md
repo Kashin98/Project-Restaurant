@@ -9,6 +9,8 @@ This is the bucket's direct Endpoint "http://projectkbp2.s3-website.ap-south-1.a
 
 WEBSITE FULLY ACCESSIBLE AT CDN:  "https://d15dv7dyrltme0.cloudfront.net"
 
+(ALL AWS SERVICES ARE DISABLED, Hosting on netlify only)
+
 Hosted on Netlify - "https://proj-restaurant.netlify.app"
 
 Learned how to: 
